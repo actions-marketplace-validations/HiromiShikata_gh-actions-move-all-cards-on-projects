@@ -1,6 +1,6 @@
 {
   "name": "gh-acoitns-move-all-cards-on-projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Move all cards to specific column from specific column.",
   "main": "lib/main.js",
