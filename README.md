@@ -8,19 +8,21 @@
 
 ## Usage
 ```yaml
+name: automation for global projects
 on:
   schedule:
     - cron: '0 19 * * *'
+
 jobs:
   clear-inprogress-column:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: HiromiShikata/gh-actions-move-all-cards-on-projects@v1
-      with:
-        project_name: 202106
-        from_column_name: In progress
-        to_column_name: To do
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: HiromiShikata/gh-actions-move-all-cards-on-projects@v1.0.2
+        with:
+          project_name: 202106
+          from_column_name: In progress
+          to_column_name: To do
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ## Development
