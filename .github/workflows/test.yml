@@ -21,4 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          milliseconds: 1000
+          project_name: test-project
+          from_column_name: In progress
+          to_column_name: To do
+          github_token: ${{ secrets.GH_TOKEN }}
